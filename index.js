@@ -4,7 +4,7 @@ var pg = require('pg');
 
 app.get('/salesforce', function (request, response) {
   pg.connect(process.env.DATABASE_URL, function(err, client, done) {
-    client.query('SELECT * FROM salesforce.Account', function(err, result) {
+    client.query('SELECT * FROM baileybones.Account', function(err, result) {
       done();
       if (err)
        { console.error(err); response.send("Error " + err); }
