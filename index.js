@@ -81,7 +81,7 @@ app.get('/children', function (req, res, next) {
   exec(cmd, function (error, stdout, stderr) {
     // command output is in stdout
   });
-  res.json({hello: "World"})
+  res.json({hello: "guys"})
 });
 //////
 app.listen(app.get('port'), function() {
